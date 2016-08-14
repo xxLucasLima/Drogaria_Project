@@ -64,7 +64,7 @@ public class FabricanteBean {
 		dao.salvar(fabricante);
 		
 		itens = dao.listar();
-		JSFUtil.adicionarMensagemSucesso("Fabricante adicionado com sucesso");
+		JSFUtil.adicionarMensagemSucesso("Fabricante adicionado com sucesso!");
 		}catch(SQLException e){
 			e.printStackTrace();
 			JSFUtil.adicionarMensagensErro(e.getMessage());
